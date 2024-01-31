@@ -1,0 +1,84 @@
+
+<html>
+<head>
+	<title>Boat Wiki - Using The Wiki </title>
+	<link href="layout.css" rel="stylesheet" type="text/css">
+	<link href="elements.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="main">
+		<div class="heading">
+			<div class="pageTitle">
+				<h3>Using The Wiki </h3>
+			</div>
+			<div class="pageLinks">
+				<div class="thisPage">This page</div>
+				<ul class="actionList"><li><a href="UsingTheWiki.html?action=likesearch">Likesearch</a></li><li><a href="UsingTheWiki.html?action=backsearch">Backsearch</a></li></ul>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+
+		<div class="content">
+			<div class="navbar">
+				<ul class="menu"><li>
+<a class="wikilink" href="BoatWiki.html">Boat Wiki</a>
+</li><li>
+<a class="wikilink" href="RecentChanges.html">Recent Changes</a>
+</li><li>
+<a class="wikilink" href="SiteMap.html">Site Map</a>
+</li><li>
+<a class="wikilink" href="SiteSearch.html">Site Search</a>
+</li><li>
+MainMenu<a class="nonexistent" href="MainMenu.html?action=edit">?</a>
+</li></ul>
+				<div class="menuEdit">
+					<a href="MainMenu.html?action=edit">Edit the Menu</a>
+				</div>
+			</div>
+
+			<div class="body">
+				<h2>Using the Wiki</h2><p><h3> WikiNames </h3>
+The main thing you need to know is that <nowiki>WordsWrittenLikeThis</nowiki> are interpreted by the wiki as links to other wiki pages and will show up on the page as a link with &quot;Words Written Like This&quot; between the &lt;a&gt; tags.  If I type <nowiki>TestPage</nowiki> then a link to a page entitled <nowiki>TestPage</nowiki> will appear.  If that page does not exist, a question mark will appear after the word in the page I am editing, and if I click on the question mark I will have the ability to create the new page by typing in some content and saving it.
+<p>
+If you want to type in <nowiki>WordsLikeThis</nowiki> and have them not become a link, or if you want to prevent any text from being interpreted by the wiki, then place it between three curly braces - <nowiki> '{{{ ...</nowiki>}}}'.  If you want an external link to another page, just type in the url and it will become a link automatically.  The same is true for email addresses - which should be safe from bots here because this page is only accessible to authorized individuals.
+<p>
+To place an image into the page, use the tag <nowiki>&quot;img:&quot;</nowiki> followed by the url of the image.  You can also do <nowiki>&quot;imgl:&quot;</nowiki>, <nowiki>&quot;imgc:&quot;</nowiki>, or <nowiki>&quot;imgr:&quot;</nowiki> depending on how you want to align the image.
+<p><h3>Formatting Wiki Text</h3><p>
+HTML tags will not be honored by the wiki and will instead be displayed as regular text.  However, there are a limited number of formatting styles that you are permitted to use.
+<p><ul>
+ <li> Emphasizing text:
+ <ul>
+  <li> Use two single-quotes on either side of some text for italics
+  <li> Use three for boldface
+  <li> Use up to 6 underscores on either side of text to create subheadings.  Be sure to use the same number on either side - the number of underscores denotes the &lt;h#&gt; level.
+ </ul>
+ <li> Lists
+ <ul>
+  <li><nowiki>Use * for bulleted lists</nowiki>
+  <li><nowiki>Use # for numbered lists</nowiki>
+  <li> The number of spaces before the list-type character denotes indentation level
+  <li> Use spaces at the beginning of a line to indent blocks of text even if you are not creating a list
+ </ul>
+ <li> Other features
+ <ul>
+  <li> Four or more dashes - <nowiki>'----'</nowiki> - denote horizontal lines of increasing thickness
+  <li> Text enclosed in two curly braces -<nowiki> '{{...}}' </nowiki>- will be printed in a uniform font, and all the whitespace will be preserved, allowing you to create tables
+  <li> Text between two square brackets -<nowiki> '[[...]]' </nowiki>- will be saved but will not appear on the page.  This is useful as a comment for those editing the page.
+ </ul>
+</ul>
+<p><h3>Photos</h3>
+You can store files you want to put on the wiki using the upload link.  The files are then available in the directory <i>boat.moomers.org/pics/<b>nameoffile</b></i>.  Please do not abuse the upload script by uploading personal files!
+<p>
+The wiki runs on a python script called <nowiki>MonkeyWiki</nowiki>, modified by me in various ways such as making the menu part of the wiki and editable and adding the &quot;This page&quot; links.  If you want to learn more about MonkeyWiki<a class="nonexistent" href="MonkeyWiki.html?action=edit">?</a> go to their site.  If you want the source to this wiki software, tell me and I'll give it to you.
+<br clear="all">
+			</div>
+			<div class="bottomLinks">
+				<ul class="actionList"><li><a href="UsingTheWiki.html?action=likesearch">Likesearch</a></li><li><a href="UsingTheWiki.html?action=backsearch">Backsearch</a></li></ul>
+			</div>
+			<div style="clear: both"> </div>
+		</div>
+	</div>
+	
+</body>
+</html>
+

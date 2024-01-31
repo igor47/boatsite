@@ -1,0 +1,74 @@
+
+<html>
+<head>
+	<title>Boat Wiki - Using The Wiki </title>
+	<link href="layout.css" rel="stylesheet" type="text/css">
+	<link href="elements.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="main">
+		<div class="heading">
+			<div class="pageTitle">
+				<h3>Likesearch 'Using The Wiki' </h3>
+			</div>
+			<div class="pageLinks">
+				<div class="thisPage">This page</div>
+				<ul class="actionList"><li><a href="UsingTheWiki.html">Goto</a></li><li><a href="UsingTheWiki.html?action=backsearch">Backsearch</a></li></ul>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+
+		<div class="content">
+			<div class="navbar">
+				<ul class="menu"><li>
+<a class="wikilink" href="BoatWiki.html">Boat Wiki</a>
+</li><li>
+<a class="wikilink" href="RecentChanges.html">Recent Changes</a>
+</li><li>
+<a class="wikilink" href="SiteMap.html">Site Map</a>
+</li><li>
+<a class="wikilink" href="SiteSearch.html">Site Search</a>
+</li><li>
+MainMenu<a class="nonexistent" href="MainMenu.html?action=edit">?</a>
+</li></ul>
+				<div class="menuEdit">
+					<a href="MainMenu.html?action=edit">Edit the Menu</a>
+				</div>
+			</div>
+
+			<div class="body">
+				<h2>Matches for: Using|The|Wiki</h2><h3>Title matches</h3><ul>
+ <li><a class="wikilink" href="BoatWiki.html">Boat Wiki</a>
+ <li><a class="wikilink" href="UsingTheWiki.html">Using The Wiki</a>
+</ul>
+<hr size=1><p><h3>Text matches (&amp; number of matches)</h3><ul>
+ <li><a class="wikilink" href="BoatWiki.html">Boat Wiki</a> (709)
+ <li><a class="wikilink" href="UsingTheWiki.html">Using The Wiki</a> (65)
+ <li><a class="wikilink" href="RiverNavigation.html">River Navigation</a> (40)
+ <li><a class="wikilink" href="RaftLibrary.html">Raft Library</a> (16)
+ <li><a class="wikilink" href="OldBoatConstruction.html">Old Boat Construction</a> (16)
+ <li><a class="wikilink" href="BoatConstruction.html">Boat Construction</a> (7)
+ <li><a class="wikilink" href="ToDoList.html">To Do List</a> (4)
+ <li><a class="wikilink" href="SuppliesNeeded.html">Supplies Needed</a> (4)
+ <li><a class="wikilink" href="PowerRequirements.html">Power Requirements</a> (4)
+ <li><a class="wikilink" href="SpellingAdvice.html">Spelling Advice</a> (1)
+ <li><a class="wikilink" href="HelpfulLinks.html">Helpful Links</a> (1)
+</ul>
+<p><form method="get" action="http://boat.moomers.org/index.py">
+		Search for: 
+		<input type="hidden" name="page" value="SiteSearch">
+		<input type="text" name="searchtext" value="Using|The|Wiki" size="20">
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset"></form>
+		
+			</div>
+			<div class="bottomLinks">
+				<ul class="actionList"><li><a href="UsingTheWiki.html">Goto</a></li><li><a href="UsingTheWiki.html?action=backsearch">Backsearch</a></li></ul>
+			</div>
+			<div style="clear: both"> </div>
+		</div>
+	</div>
+	
+</body>
+</html>
+

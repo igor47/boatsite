@@ -1,0 +1,79 @@
+
+<html>
+<head>
+	<title>Boat Wiki - River Navigation </title>
+	<link href="layout.css" rel="stylesheet" type="text/css">
+	<link href="elements.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="main">
+		<div class="heading">
+			<div class="pageTitle">
+				<h3>River Navigation </h3>
+			</div>
+			<div class="pageLinks">
+				<div class="thisPage">This page</div>
+				<ul class="actionList"><li><a href="RiverNavigation.html?action=likesearch">Likesearch</a></li><li><a href="RiverNavigation.html?action=backsearch">Backsearch</a></li></ul>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+
+		<div class="content">
+			<div class="navbar">
+				<ul class="menu"><li>
+<a class="wikilink" href="BoatWiki.html">Boat Wiki</a>
+</li><li>
+<a class="wikilink" href="RecentChanges.html">Recent Changes</a>
+</li><li>
+<a class="wikilink" href="SiteMap.html">Site Map</a>
+</li><li>
+<a class="wikilink" href="SiteSearch.html">Site Search</a>
+</li><li>
+MainMenu<a class="nonexistent" href="MainMenu.html?action=edit">?</a>
+</li></ul>
+				<div class="menuEdit">
+					<a href="MainMenu.html?action=edit">Edit the Menu</a>
+				</div>
+			</div>
+
+			<div class="body">
+				<h2>charts and gps directly</h2>
+we have a set of really nice charts which allow us to use our gps unit directly (as in, by looking at it's screen) and plotting our position. I still think we should have a cache of the satellite images, but it is less crucial.
+<p><h2>Google Earth</h2><h3>why?</h3>
+I think google earth is a convenient tool for our main navigation.  Combined with a navigational map which will show us the depth of the river and the location of the channel in various places along the river, we should have everything we need.
+<p>
+The advantage of satellite navigation is that we can, at a glance, correlate our position on the map with our physical location. Also, satellite maps are really easy to read and show an amazing amount of detail that might be missing from conventional maps, such as the location of shoals and maybe even wing dams. I couldn't find any easily available navigation software for Linux, so we might have to rely on paper charts for wing dam and stump forest field locations. Maybe we stop being elitist and try using Windows FOR THE LOVE OF GOD.
+<p><h3>cost</h3>
+The good thing is that a google-earth based gps navigation system will cost us $20, which is the privilege you pay for Google Earth Pro, the edition that permits you to connect a GPS unit to google earth.
+<p><h3>technical details details</h3><p>
+We are going to be using a combination of 
+<ul>
+ <li> A thinkpad X60 with copious amounts of hot creamy warranty, owned by one Steven Lucy, running Linux (see <a class="wikilink" href="PowerRequirements.html">Power Requirements</a>)
+ <li> a Garmin GPSmap 60CSx GPS unit, running on two AA batteries but which draws power from the USB port of the laptop.
+</ul>
+<p><h4>gps to kml file</h4>
+After connecting the GPS unit to the computer, it does not come up as a known gps device.  in fact, the garmin_gps module will provide some details about the device, but I could not get garmin_gps and gpsd to work together.  more research is forthcoming...
+<p>
+in the meantime, the gpsbabel software seems to do pretty well at communicating with the GPS unit.  the following command: <pre>gpsbabel -T -i garmin -f usb: -o kml -F gps.kml</pre> will create the gps.kml KML file, which is a human-readable xml file regularly updated with position information.  that file is a bit inefficient, since it just keeps growing as more positions are logged, so some rotation will have to be done to keep its inefficient XML goodness from getting out of control.
+<p><h4>Google earth</h4>
+google earth has a realtime gps option which will read the kml file and plot our progress.  i haven't tested this since it requires the $20 subscription to google earth pro, but i'll probably do it soon.
+<p>
+we will not have access to a high-speed internet connection on the raft, so we will need to cache the satellite image data ahead of time by following the entire course of our navigation through google earth. 
+<p>
+there are a few ways to do this.  one, which is yet to be tested, is using a squid cache.  some hacks are necessary to properly cache keyhole data:<br>
+<pre><a href="http://www.thetlog.net/2005/09/26/caching-google-earth-with-squid/">http://www.thetlog.net/2005/09/26/caching-google-earth-with-squid/</a> </pre><br>
+and it may not work properly.  
+<p>
+a sure-fire way to to use the built-in caching mechanism in google earth. this is suboptimal since the maximum size for the cache files is 2GB.  we would have to rotate cache files manually in order to have access to the right imagery.  I suppose it is open source, so I could, you know, edit the cache size.
+<br clear="all">
+			</div>
+			<div class="bottomLinks">
+				<ul class="actionList"><li><a href="RiverNavigation.html?action=likesearch">Likesearch</a></li><li><a href="RiverNavigation.html?action=backsearch">Backsearch</a></li></ul>
+			</div>
+			<div style="clear: both"> </div>
+		</div>
+	</div>
+	
+</body>
+</html>
+

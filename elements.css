@@ -1,0 +1,57 @@
+.messages{
+	color: red; text-align: center;
+	font-size: .8em;
+}
+
+a { color: #00A0FF; text-decoration: none; }
+a:hover { color:#7ACEFF}
+
+a.wikilink, a.wikilink:visited { color:green; }
+a.wikilink:hover { color:lime; }
+
+a.nonexistent{ color:red; text-decoration: none;}
+a.nonexistent:hover { color:yellow; }
+
+.menu li a { color: green; text-decoration: none; }
+.menu li a:hover { color: chartreuse; }
+
+.actionList li a { color: green; text-decoration: none; }
+.actionList li a:hover { color: yellow; }
+
+.menuEdit a, .menuEdit a:visited { color: midnightblue; }
+.menuEdit a:hover { color: blue; }
+
+.instructionList {
+	list-style-position: inside;
+	margin: 0;
+	padding: 1em;
+	margin-left: .8em;
+}
+
+.thisPage {
+	text-align: right; 
+	padding-right:17em; 
+	text-decoration: underline;
+	font-variant: small-caps;
+}
+
+.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 40px 0 40px 1em;
+}
+.actionList {
+	margin: 0;
+	padding: 0;
+}
+
+.actionList li {
+	display: inline;
+	padding: 0 10px 0 2px; 
+	border-right: 1px solid black;
+}
+
+h1{ font-size: 160%; }
+h2{ font-size: 140%; text-align: center; }
+h3{ font-size: 120%; }
+h4{ font-size: 110%; margin-left: 1em; font-weight: normal;}
